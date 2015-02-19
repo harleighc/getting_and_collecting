@@ -5,7 +5,7 @@ Data sourced from UCI MAchine Learning Repository - http://archive.ics.uci.edu/m
 Human Activity Recognition Using Smartphones Data Set - 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Intention of this script is to merge, clean and summarize multiple datasets and output a .txt file named "tt_stddev_and_mean_averages.txt". This file returns the average of the Mean and Std deviation data, from each Subject and Activity.   This returned a total of 66 variables for each Subjects(30) activities(6) analysed.  Freqmean and angle(of mean) variables were not included.
+Intention of this script is to merge, clean and summarize multiple datasets and output a .txt file named "tt_stddev_and_mean_averages.txt". This file returns the average of the Mean and Std deviation data, from each Subject and Activity.   This returned a total of 66 variables for each subject(30) and activity(6) analysed.  Freqmean and angle(of mean) variables were not included.
 
 
 #Requirements and assumptions:
