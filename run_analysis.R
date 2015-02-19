@@ -3,7 +3,7 @@
 
 library(reshape2)
 
-## this block of code readss all required data sets from your working directory
+## this block of code reads all required data sets from your working directory
 
 trainY <- read.table(file = "UCI HAR Dataset/train/y_train.txt")
 trainX <- read.table(file = "UCI HAR Dataset/train/X_train.txt")
@@ -15,7 +15,7 @@ testY <- read.table(file = "UCI HAR Dataset/test/y_test.txt")
 testX <- read.table(file = "UCI HAR Dataset/test/X_test.txt")
 testSubject <- read.table(file = "UCI HAR Dataset/test/subject_test.txt")
 
-## this block of code prepares the labels for the test and training data columns features$V1 <- NULL
+## this block of code prepares the labels for the test and training data columns 
 features$V1 <- NULL
 features <- t(features)
 features <- as.list(features)
@@ -29,12 +29,6 @@ test <- cbind(testSubject,testY,testX)
 names(test) <- c(V1 = "Subject", V1.1 = "Activity", features)
 ttcombined <- rbind(train,test)
 ttcombined <- ttcombined[order(ttcombined$Subject),]
-
-##write.table(ttcombined, "ttcombined2.csv", sep = ",", row.names = FALSE)
-##tcombinedorder <- ttcombined[order(ttcombined$Subject),]
-##head(ttcombinedorder)
-##write.table(ttcombinedorder, "ttcombinedorder.csv", sep = ",", row.names = FALSE)
-
 
 ## this block of code subsets the combined data to only include std dev and mean results
 
@@ -53,5 +47,5 @@ ttsub$Activity <- factor(ttsub$Activity, levels = c(1,2,3,4,5,6), labels = activ
 ttsublong<- melt(ttsub, id = c("Subject", "Activity"))
 dim(ttsublong)
 ttaverages <- dcast(ttsublong, Subject + Activity ~ variable,mean)
-write.table(ttaverages, file = "ttaverages1.txt", row.name = FALSE, sep = " ")
+write.table(ttaverages, file = "tt_stddev_and_mean_averages.txt", row.name = FALSE, sep = " ")
 dim(ttaverages)
