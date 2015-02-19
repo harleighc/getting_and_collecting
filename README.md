@@ -10,7 +10,7 @@ Intention of this script is to merge, clean and summarize multiple datasets and 
 
 #Requirements and assumptions:
 
-It is assumed the above data is downloaded and stored in your working directory
+It is assumed the above data is downloaded, unzipped and stored in your working directory
 
 The "reshape2" package is installed
 
