@@ -45,7 +45,6 @@ ttsub$Activity <- factor(ttsub$Activity, levels = c(1,2,3,4,5,6), labels = activ
 ## this block of code creates and saves a new dataset with the average of each variable for each activity and each subject.
 
 ttsublong<- melt(ttsub, id = c("Subject", "Activity"))
-dim(ttsublong)
 ttaverages <- dcast(ttsublong, Subject + Activity ~ variable,mean)
 write.table(ttaverages, file = "tt_stddev_and_mean_averages.txt", row.name = FALSE, sep = " ")
-dim(ttaverages)
+
