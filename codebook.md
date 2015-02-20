@@ -51,14 +51,6 @@ skewness(): skewness of the frequency domain signal
 kurtosis(): kurtosis of the frequency domain signal 
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 
-#updates to CodeBook
-
-Variables for the data as it is being processes have been created 
-
-| Variable       | Description                                                       | Class            |
-|--------------- |:------------------------------------------------------------------|-----------------:|
-|
-
 angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
@@ -68,3 +60,31 @@ tBodyAccMean
 tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
+
+
+#updates to CodeBook
+
+Variables for the data as it is being processes have been created 
+
+| Variable       | Description                                                        |
+|--------------- |:------------------------------------------------------------------:|
+|testX           |DataFrame of all test variable estimations (as above)               |
+|testSubject     |DataFrame of test subjects who participated                         |
+|testY           |DataFrame of activities of test Subjects                            |
+|trainX          |DataFrame of all train variable estimations (as above)              |
+|trainSubject    |DataFrame of train subjects who participated                        |
+|trainY          |Dataframe of activities of train subjects                           |
+|features        |DataFrame of description of variable estimations                    |
+|activity        |Dataframe of description of activities                              | 
+|ttcombined      |DataFrame combining and naming of both test and train DataFrames    |
+|ttsub           |Subset of ttcombined - only mean and std dev observations*          |
+|ttsublong       |long form of ttsub DataFrame                                        | 
+|ttaverages      |DataFrame averaging the mean&stddev of all subjects and activities  |
+|activitylabels  |List used as factors to describe activities                         |
+|features        |List used name variable estimations                                 |
+
+* MeanFreq and angle(mean) variables were not included. 
+
+
+
+
