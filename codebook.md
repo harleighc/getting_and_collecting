@@ -22,7 +22,7 @@ Variable Descriptions
 * MeanFreq and angle(mean) variables were not included. 
 
 
-The following description is within supplied dataset
+The following description is taken from within supplied dataset
 
 Feature Selection
 
