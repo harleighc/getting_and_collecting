@@ -1,9 +1,28 @@
-# Variables in run_analysis.R
 
-#Codebook for raw data
 
-Feature Selection 
-=================
+Variables for the data as it is being processes have been created 
+
+| Variable       | Description                                                        |
+|--------------- |:------------------------------------------------------------------:|
+|testX           |DataFrame of all test variable estimations (as above)               |
+|testSubject     |DataFrame of test subjects who participated                         |
+|testY           |DataFrame of activities of test Subjects                            |
+|trainX          |DataFrame of all train variable estimations (as above)              |
+|trainSubject    |DataFrame of train subjects who participated                        |
+|trainY          |Dataframe of activities of train subjects                           |
+|features        |DataFrame of description of variable estimations                    |
+|activity        |Dataframe of description of activities                              | 
+|ttcombined      |DataFrame combining and naming of both test and train DataFrames    |
+|ttsub           |Subset of ttcombined - only mean and std dev observations*          |
+|ttsublong       |long form of ttsub DataFrame                                        | 
+|ttaverages      |DataFrame averaging the mean&stddev of all subjects and activities  |
+|activitylabels  |List used as factors to describe activities                         |
+|features        |List used name variable estimations                                 |
+
+* MeanFreq and angle(mean) variables were not included. 
+
+
+Feature Selection
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -61,29 +80,8 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
+For further information see
 
-#updates to CodeBook
-
-Variables for the data as it is being processes have been created 
-
-| Variable       | Description                                                        |
-|--------------- |:------------------------------------------------------------------:|
-|testX           |DataFrame of all test variable estimations (as above)               |
-|testSubject     |DataFrame of test subjects who participated                         |
-|testY           |DataFrame of activities of test Subjects                            |
-|trainX          |DataFrame of all train variable estimations (as above)              |
-|trainSubject    |DataFrame of train subjects who participated                        |
-|trainY          |Dataframe of activities of train subjects                           |
-|features        |DataFrame of description of variable estimations                    |
-|activity        |Dataframe of description of activities                              | 
-|ttcombined      |DataFrame combining and naming of both test and train DataFrames    |
-|ttsub           |Subset of ttcombined - only mean and std dev observations*          |
-|ttsublong       |long form of ttsub DataFrame                                        | 
-|ttaverages      |DataFrame averaging the mean&stddev of all subjects and activities  |
-|activitylabels  |List used as factors to describe activities                         |
-|features        |List used name variable estimations                                 |
-
-* MeanFreq and angle(mean) variables were not included. 
 
 
 
