@@ -1,6 +1,6 @@
 
 
-Variables for the data as it is being processes have been created 
+Variable Descriptions
 
 | Variable       | Description                                                        |
 |--------------- |:------------------------------------------------------------------:|
@@ -21,6 +21,8 @@ Variables for the data as it is being processes have been created
 
 * MeanFreq and angle(mean) variables were not included. 
 
+
+The following description is within supplied dataset
 
 Feature Selection
 
@@ -82,6 +84,7 @@ tBodyGyroJerkMean
 
 For further information see
 
+UCI MAchine Learning Repository - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones Human Activity Recognition Using Smartphones Data Set - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
 
